@@ -1,0 +1,233 @@
+.fundo {
+    margin-top: 300px;
+    height: 220px;
+    background-image: linear-gradient( to right, white 35%, #F4F4F4 0%, #F4F4F4 ); /*Estava pensando em como ia fazer para dividir as cores no meio, depois de uns 30 minutos, lembrei desse código kkkkkkk*/
+    position: relative;
+}
+
+.logoFooter {
+    width: 115px;
+}
+
+/*Inicio do primeiro bloco lado branco*/
+.branco1 { 
+    margin-left: 63px;
+    padding-top: 30px;
+    position: absolute;
+}
+
+.letraPequena {
+    font-size: 12px;
+}
+
+.face, .insta, .linke {
+    margin-right: 15px;
+    margin-top: 30px;
+}
+.branco1 a:hover {
+    border: none;
+}
+/*Fim do primeiro bloco lado branco*/
+
+ /*Inicio do segundo bloco lado branco*/
+.branco2 {
+    margin-left: 300px;
+    position: absolute;
+    margin-top: 20px;
+    width: 140px;
+    height: 150px;
+    transition: color .4s;
+}
+.branco2 a {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: black;
+    
+}
+li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+
+
+a:hover {
+    color: #707070;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+/*Fim do segundo bloco lado branco*/
+
+/*Inicio do primeiro bloco lado cinza*/
+.cinza1 {
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 20px;
+}
+
+.letraPequena2 {
+    font-size: 12px;
+}
+h3 {
+    margin-bottom: 4px;
+}
+/*Fim do primeiro bloco lado cinza*/
+
+/*Inicio do segundo bloco lado cinza*/
+.cinza2 {
+    position: absolute;
+
+    margin-left: 750px;
+    margin-top: 20px;
+}
+/*Fim do segundo bloco lado cinsa*/
+
+/*Inicio do terceiro bloco lado cinza*/
+.cinza3{
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 20px;
+}
+/*Fim do terceiro bloco lado cinza*/
+
+/*Inicio do quarto bloco lado cinza*/
+.cinza4{
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 20px;
+}
+/*Fim do quarto bloco lado cinza*/
+
+/*Responsivo*/
+@media (max-width: 1300px) {
+    .branco2 {
+        margin-left: 250px;
+        width: 100px;
+    }
+
+    @media (max-width: 1182px) {
+        .cinza4 {
+            margin-left: 1000px;
+        }
+        .cinza3 {
+            margin-left: 850px;
+        }
+        .cinza2 {
+            margin-left: 700px;
+        }
+        .cinza1 {
+            margin-left: 500px;
+        }
+
+        @media (max-width: 1079px) {
+            .cinza1 {
+                margin-left: 400px;
+            }
+            .cinza2 {
+                margin-left: 600px;
+            }
+            .cinza3 {
+                margin-left: 750px;
+            }
+            .cinza4 {
+                margin-left: 900px;
+            }
+            .branco2 {
+                width: 70px;
+            }
+
+            @media (max-width: 970px) {
+                .fundo {
+                    background-image: linear-gradient( to bottom, white 35%, #F4F4F4 0%, #F4F4F4 );
+                    height: 450px;
+                }
+                .branco1 {
+                    margin-left: 130px;
+                    text-align: center;
+                }
+                .branco2 {
+                    margin-left: 100px;
+                    margin-top: 160px;
+                    width: 200px;
+                    text-align: center;
+                }
+                .cinza1 {
+                    margin-left: 350px; 
+                }
+                .cinza2 {
+                    margin-left: 530px; 
+                }
+                .cinza3 {
+                    margin-left: 650px; 
+                }
+                .cinza4 {
+                    margin-left: 790px; 
+                }
+
+                @media (max-width: 868px) {
+                    .fundo {
+                        background-image: linear-gradient( to bottom, white 30%, #F4F4F4 0%, #F4F4F4 );
+                        height: 550px;
+                    }
+                    .cinza1 {
+                        margin-top: 360px;
+                        margin-left: 100px;
+                    }
+                    .cinza2 {
+                        margin-left: 360px;
+                    }
+                    .cinza3 {
+                        margin-left: 500px; 
+                    }
+                    .cinza4 {
+                        margin-left: 660px; 
+                    }
+
+                    @media (max-width: 736px) {
+                        .fundo {
+                            background-image: linear-gradient( to bottom, white 25%, #F4F4F4 0%, #F4F4F4 );
+                            height: 650px;
+                        }
+                        .cinza2 {
+                            margin-left: 100px;
+                            margin-top: 510px;
+                        }
+                        .cinza3 {
+                            margin-left: 350px; 
+                        }
+                        .cinza4 {
+                            margin-left: 500px; 
+                        }
+
+                        @media (max-width: 590px) {
+                            .fundo {
+                                background-image: linear-gradient( to bottom, white 20%, #F4F4F4 0%, #F4F4F4 );
+                                height: 750px;
+                            }
+                            .cinza3 {
+                                margin-left: 100px;
+                                margin-top: 610px; 
+                            }
+                            .cinza4 {
+                                margin-left: 350px; 
+                            }
+
+                            @media (max-width: 420px) {
+                                .fundo {
+                                    background-image: linear-gradient( to bottom, white 18%, #F4F4F4 0%, #F4F4F4 );
+                                    height: 850px;
+                                }
+                                .cinza4 {
+                                    margin-left: 100px;
+                                    margin-top: 740px; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    } 
+}
+      
+    

@@ -1,0 +1,110 @@
+.logo {
+    margin-top: 20px;
+    margin-left: 65px;
+    width: 170px;
+    position: absolute;
+}
+.inicio {
+    height: 100px;
+    position: relative;
+}
+ul li {  
+    display: inline;
+
+}
+
+ul li a {
+    color:white;
+    margin-left: 20px;
+}
+ul {
+    position: absolute;
+    margin-left: 893px;  
+    margin-top: 26px;
+}
+
+a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color .4s;
+}
+
+.inicio a:hover {
+    color: #707070;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.icon {
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    left: 30px;
+
+}
+
+/*Responsivo*/
+@media (max-width: 1280px) {
+    ul {
+        margin-left: 700px;  
+    }
+
+    @media (max-width: 1120px) {
+        ul {
+            margin-left: 600px;  
+        }
+
+        @media (max-width: 1000px) {
+            ul {
+                margin-left: 500px;  
+            }
+
+            @media (max-width: 904px) {
+                ul {
+                    margin-left: 400px;  
+                }
+
+                @media (max-width: 816px) {
+                    ul {
+                        margin-left: 300px;  
+                    }
+
+                    @media (max-width: 710px) {
+                        ul {
+                           position: fixed;
+                            margin-top: 0;
+                            margin-left: 0;
+                            height: 100vh;
+                            width: 100%;
+                            background: #222; 
+                            max-width: 300px;
+                            text-align: center;                    
+                            transition: all 0.3s ease;
+                        }
+                        ul .menu-list.active {
+                            left: 0%;
+                        }
+                        ul li {  
+                            display: block;
+                            margin-top: 45px;
+                        }
+                        a {
+                            font-size: 23px;
+                        }
+                        .icon {
+                            display: block;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
